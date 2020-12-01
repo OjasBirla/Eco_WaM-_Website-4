@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(../Assets/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.text-big{
+    font-size: 40px;
+}
+.text-small{
+    font-size: 20px;
+    font-family: 'Gafata', sans-serif;
+}
+
+.margin{
+    margin: 20px;
+}
+
+.border-radius{
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.centerAlign{
+    text-align: center;
+}
+
+.heading{
+    font-family: 'Fresca', sans-serif;
+}
+
+
+.btn{
+    color: white;
+    border: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 0 10px;
+    background: none;
+}
+#search{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.supperLargeText{
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.logo{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.logo img{
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.menuBarText{
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.navBar{
+    display: flex;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.changeContent:after{
+    content: "";
+    animation: changetext 5s infinite ;
+}
+
+@keyframes changetext{
+    0%{content: "Eco WaM";}
+    25%{content: "Eco";}
+    50%{content: "Waste";}
+    100%{content: "Managment";}
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-list li{
+    list-style: none;
+    padding: 0 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    color: grey;
+}
+
+/* .search{
+    width: 25%;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    align-content: center;
+} */
+
+
+.firstSection{
+    padding: 20px;
+    height: 84vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 75%;
+    padding-right: 70px;
+    height: 100%;
+    margin: auto;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: auto;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.whatIsLitter{
+    background-color: rgb(62, 245, 154);
+    margin: 10px;
+}
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    max-width: 85%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+.subContainer{
+    display: flex;
+}
+
+.subSub{
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+}
+
+.paras{
+    padding: 40px;
+}
+
+.Image{
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.suggestionContainer{
+    background-color: rgb(255, 243, 192);
+    margin: 20px 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestionInp{
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.suggestionInp-big{
+    width: 80vw;
+}
+
+.suggestionBtn{
+    width: 75px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+
+.AboutUs{
+    background-color: lemonchiffon;
+    margin: 20px;
+}
+
+.aboutUsHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abuotUsImg{
+    border: 2px solid black;
+    border-radius: 100px;
+    margin: 10px 0;
+}
+
+.aboutUsText{
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    font-family: cursive;
+    color: white;
+}
+
+@media only screen and (max-width: 850px){
+    .navBar{
+        height: 300px;
+        transition: all 0.7s ease-out;
+    }    
+
+    .nav-list{
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+
+    .burger{
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .line{
+        background-color: white;
+        width: 20px;
+        height: 2px;
+        margin: 3px;
+    }
+
+    .section{
+        flex-direction: column;
+    }
+    .box-main{
+        flex-direction: column;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .subContainer{
+        flex-direction: column;
+    }
+
+    .subSub{
+        width: 100%;
+    }
+
+    .firstSection{
+        height: auto;
+    }
+    .secondHalf{
+        width: auto;
+    }
+    .secondHalf img{
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+
+    .paras{
+        padding: 10px 0;
+    }
+    .Image{
+        width: 100%;
+        height: auto;
+    }
+
+    .h-class{
+        height: 70px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+
+
+    .aboutUsText{
+        text-align: center;
+    }
+}

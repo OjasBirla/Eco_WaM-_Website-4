@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Eco WaM</title>
+
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+        <script>
+            var firebaseConfig = {
+              apiKey: "AIzaSyDNdztgxoH_hPM2P8u_bEEOpScyNwQPQVs",
+              authDomain: "eco-wam.firebaseapp.com",
+              databaseURL: "https://eco-wam.firebaseio.com",
+              projectId: "eco-wam",
+              storageBucket: "eco-wam.appspot.com",
+              messagingSenderId: "593188514829",
+              appId: "1:593188514829:web:4cba0c4da42c3f8da53944"
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+        <script src="./Js/sketch.js"></script>
+        <script src="./Js/responsive.js"></script>
+
+    </head>
+
+    <body>
+        <nav class="navBar background h-class" id="navBar">
+            <ul class="nav-list v-class" id="nav-list">
+                <h1 class="menuBarText"><span class="changeContent"></span></h1>
+                <div class="logo"><img src="./Assets/img.jpg" alt="Logo Image" height="20%"></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#suggestion">Your Suggestion</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            
+            <!-- <div class="search">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+            </div> -->
+
+            <div class="burger" onclick="responsive()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
+        <section id="home" class="firstSection background">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <p class="text-big heading">What is Eco WaM</p>
+                    <p class="text-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos odit harum possimus voluptate officiis, laudantium sapiente id sunt ipsa ipsam reiciendis aliquam veritatis distinctio quisquam, quos enim vitae itaque voluptas ipsum impedit ducimus consequuntur. Ad ab repellendus provident nisi iusto tempora pariatur quidem laboriosam accusamus incidunt odio, omnis eos possimus delectus et molestiae inventore dolorum similique, expedita labore quos, natus dolores quaerat quisquam? Sed facilis consequatur nesciunt velit ipsam, fugiat tempora quo, dolorem error magnam laboriosam porro quis eaque id eligendi neque! At magni facilis alias voluptatum doloremque, mollitia dolores accusamus, maiores, id consequuntur beatae molestias autem quod deserunt. Nobis.</p>
+                </div>
+
+                <div class="secondHalf">
+                    <img src="./Assets/img.jpg" alt="" height="200px">
+                </div>
+            </div>
+        </section>
+
+        <div class="whatIsLitter">
+
+            <section class="section">
+            <div class="paras">
+                <p class="text text-big heading">What is Litter?</p>
+                <p class="subText text-small">Storms on a beach cause tiny whirlwinds of waste  blown about with the raging wind. Packaging waste jostles with aquatic          creatures for space in the murky waters of the ocean. 
+                    
+                    <br><br>
+                    
+                    When garbage is dumped randomly, it is called litter. Every year, just the amount of litter emptied into the oceans adds up to 9 billion tons. 
+                    
+                    <br><br>
+
+                    Most of the litter comes from construction, demolishment, and mining. Municipal waste only adds to the burden.
+                    
+                    <br><br>
+
+                    Although littering is a thoughtless action, it is quite expensive to wash the footprints off. This is no issue that can be ignored. 
+                    Waste management is wrought with hassles. 
+                </p>
+            </div>
+
+            <div>
+                <img src="./Assets/img.jpg" alt="" class="Image" height="200px">
+            </div>
+            </section>
+
+            <div class="subContainer">
+                <section class="subSub section left">
+                    <div class="paras">
+                        <p class="text text-big heading">How Waste Management works</p>
+                        <p class="subText text-small">
+                        
+                            The age-old mantra we must acknowledge is 'Reduce, Reuse, Recycle'
+                            Reducing is about minimalism that separates need from greed and shirks obsessive consumerism.
+
+                            <br><br>
+
+                            Reusing is about creativity that envisages differently purposed products from the old ones that have outlived their function.
+
+                            <br><br>
+                        
+                            Recycling is about the responsibility to ensure the disposal of useless products to designated factories that segregate them into recyclable and non-recyclable waste. 
+                        
+                            <br><br>
+                        
+                            Disposal
+                        
+                            <br><br>
+                        
+                            Disposal is the last stage of waste management Proper adherence to the Rs reduces the load at this stage. There are 3 primary methods of disposal. 
+                        </p>
+                    </div>
+                
+                    <div>
+                        <img src="./Assets/img.jpg" alt="" class="Image" height="200px">
+                    </div>
+                </section>
+
+                <section class="subSub section">
+                    <div class="paras">
+                        <p class="text text-big heading">Composting, Landfilling and Incineration</p>
+                        <p class="subText text-small">
+                            Composting allows for the disposal of the biodegradable waste into a pit and degrading it into compost. It is completely natural and causes no harm.
+
+                            Landfilling, where most types of waste are dumped and left open for quite a long period of time, is a real stumbling block of a city. The toxic fumes and stench breed germs, causing massive healthcare concerns, especially in developing countries.
+
+                            <br><br>
+
+                            Incineration, which is largely for hazardous medical waste, is where the waste is burnt and landfilled. This process also causes the same risks as landfilling, and is the source of most potent carcinogens.
+                    
+                            <br><br>
+
+                            Planet Earth is in SOS mode. Is this a home, or a curse, that is to be passed down to future generations?</p>
+                </div>
+
+            <div>
+                <img src="./Assets/img.jpg" alt="" class="Image" height="200px">
+            </div>
+                </section>
+            </div>
+
+        </div>
+        
+        <section  class="suggestionContainer" id="suggestion">
+            <h1 class="supperLargeText">Suggestion</h1>
+
+            <br>
+
+            <p class="text-small">At present, we offer monitoring and evaluation of the suggestions that our website viewers provide. We blend ideas to offer effective solutions that can make up a better world.
+
+                <br><br>
+
+                Offer your suggestions here..</p>
+            <input id="nameInp" type="text" class="suggestionInp" placeholder="Name">
+            <input id="ageInp" type="text" class="suggestionInp" placeholder="Age">
+            <input id="suggestionInp" type="text" class="suggestionInp suggestionInp-big" placeholder="Suggestion">
+                
+            <button class="suggestionBtn" onclick="Suggestion()">Suggest</button>
+        </section>
+
+        <section class="AboutUs" id="about">
+            <div class="aboutUsHeading"><h1 class="supperLargeText">About Us</h1></div>
+
+            <br>
+
+            <p class="text-small">Our Student-School lead team believes that the world is a web of interconnected systems.</p>
+
+            <br><br>
+
+            <p class="text-big">What Makes us Unique</p>
+
+            <p class="text-small">We focus on a holistic and practical approach. Development is indispensable to a growing economy. Waste management must be modernized to support the changing needs of urbanization.</p>
+
+            <br><hr>
+
+            <div class="section margin">
+                <div class="Name">
+                    <p class="text text-big aboutUsText">The Indian Public School</p>
+                    <p class="subText text-small aboutUsText">Organization</p>
+                </div>
+
+                <div id="TIPS">
+                    <img class="abuotUsImg" src="./Assets/TIPS.png" alt="TIPS logo" width="150px">
+                </div>
+            </div>
+
+            <h1 class="text-big centerAlign aboutUsText">Our Supervisors</h1>
+
+            <h1 class="text-big centerAlign aboutUsText">Our Comitee</h1>
+
+            <div class="section margin">
+                <div class="Name">
+                    <p class="text text-big aboutUsText">Ojas Birla</p>
+                </div>
+
+                <div id="Ojas">
+                    <img class="abuotUsImg" src="./Assets/TIPS.png" alt="Ojas Img"  width="150px">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section margin">
+                <div class="Name">
+                    <p class="text text-big aboutUsText">Vikunth Gupta</p>
+                </div>
+
+                <div id="Vikunth">
+                    <img class="abuotUsImg" src="./Assets/People/Vikunth.jpeg" alt="Vikunth Img" width="150px">
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="section margin">
+                <div class="Name">
+                    <p class="text text-big aboutUsText">S.K.Shreenidhi</p>
+                </div>
+
+                <div id="Shreenidhi">
+                    <img class="abuotUsImg" src="./Assets/People/Shreenidhi.jpeg" alt="Shreenidhi Img" width="150px">
+                </div>
+            </div>
+            
+            <hr> 
+
+            <div class="section margin">
+                <div class="Name">
+                    <p class="text text-big aboutUsText">B.K.Isha</p>
+                </div>
+
+                <div id="Isha">
+                    <img class="abuotUsImg" src="./Assets/People/Isha.jpeg" alt="Shreenidhi Img" width="150px">
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="section margin">
+                <div class="Name">
+                    <p class="text text-big aboutUsText">Sanjana.N.Sathish</p>
+                </div>
+
+                <div id="Shreenidhi">
+                    <img class="abuotUsImg" src="./Assets/People/Snajana.jpeg" alt="Shreenidhi Img" width="150px">
+                </div>
+            </div>
+            
+            <hr> 
+        </section>
+
+        <footer class="footer background">Copyright @ 2027 - www.__________.com - All rights reserved</footer>
+
+    </body>
+</html>
